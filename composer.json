@@ -1,5 +1,5 @@
 {
-    "name": "thepinecode/i18n",
+    "name": "khamsolt/i18n",
     "description": "Push your translations to the front-end.",
     "type": "project",
     "license": "MIT",
@@ -7,16 +7,20 @@
         {
             "name": "Gergő D. Nagy",
             "email": "hello@iamgergo.com"
+        },
+        {
+            "name": "Magomed Khamidov",
+            "email": "khamidov.che@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Pine\\I18n\\": "src/"
+            "Khamsolt\\I18n\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pine\\I18n\\Tests\\": "tests/"
+            "Khamsolt\\I18n\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -35,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Pine\\I18n\\I18nServiceProvider"
+                "Khamsolt\\I18n\\I18nServiceProvider"
             ]
         },
         "branch-alias": {

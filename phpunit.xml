@@ -9,7 +9,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Pine Test Suite">
+        <testsuite name="Khamsolt Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>

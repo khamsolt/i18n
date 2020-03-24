@@ -1,6 +1,6 @@
 <?php
 
-namespace Pine\I18n;
+namespace Khamsolt\I18n;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\File;

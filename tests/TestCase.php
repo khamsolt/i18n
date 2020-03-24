@@ -1,11 +1,11 @@
 <?php
 
-namespace Pine\I18n\Tests;
+namespace Khamsolt\I18n\Tests;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Pine\I18n\I18nServiceProvider;
+use Khamsolt\I18n\I18nServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {
