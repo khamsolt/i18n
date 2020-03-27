@@ -1,5 +1,5 @@
 {
-    "name": "khamsolt/i18n",
+    "name": "khamsolt/laravi18",
     "description": "Push your translations to the front-end.",
     "type": "project",
     "license": "MIT",
@@ -15,12 +15,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Khamsolt\\I18n\\": "src/"
+            "Khamsolt\\Laravi18\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Khamsolt\\I18n\\Tests\\": "tests/"
+            "Khamsolt\\Laravi18\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -39,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Khamsolt\\I18n\\I18nServiceProvider"
+                "Khamsolt\\Laravi18\\Laravi18ServiceProvider"
             ]
         },
         "branch-alias": {

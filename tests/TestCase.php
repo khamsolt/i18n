@@ -5,7 +5,7 @@ namespace Khamsolt\I18n\Tests;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Khamsolt\I18n\I18nServiceProvider;
+use Khamsolt\I18n\Laravi18ServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -27,6 +27,6 @@ abstract class TestCase extends BaseTestCase
 
     protected function getPackageProviders($app)
     {
-        return [I18nServiceProvider::class];
+        return [Laravi18ServiceProvider::class];
     }
 }
