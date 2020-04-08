@@ -12,5 +12,7 @@ use Illuminate\Support\Collection;
  */
 interface TranslationInterface
 {
+    public const KEY = 'laravi18_translations';
+
     public function getCollection(): Collection;
 }

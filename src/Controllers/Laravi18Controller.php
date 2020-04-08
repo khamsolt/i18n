@@ -4,6 +4,8 @@
 namespace Khamsolt\Laravi18\Controllers;
 
 
+use Illuminate\Cache\Repository as Cache;
+use Illuminate\Config\Repository as Config;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -22,14 +24,22 @@ class Laravi18Controller extends Controller
 
     /** @var TranslationInterface */
     private $translation;
+    /** @var Cache */
+    private $cache;
+    /** @var Config */
+    private $config;
 
     /**
      * I18nController constructor.
      * @param TranslationInterface $translation
+     * @param Cache $cache
+     * @param Config $config
      */
-    public function __construct(TranslationInterface $translation)
+    public function __construct(TranslationInterface $translation, Cache $cache, Config $config)
     {
-        $this->translation = $translation;
+        $this->translation  = $translation;
+        $this->cache        = $cache;
+        $this->config       = $config;
     }
 
     /**
@@ -37,7 +47,6 @@ class Laravi18Controller extends Controller
      */
     public function translations()
     {
-        $collection = $this->translation->getCollection();
-        return Response::json($collection);
+        return Response::json($this->cache->get($this->translation::KEY));
     }
 }
